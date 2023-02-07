@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { Cover , Search} from '@my-workspace/my-ui'
+import { Cover , Search,CardExam} from '@my-workspace/my-ui'
 import React from 'react'
 
 
@@ -54,15 +54,14 @@ const ListePlaylist = ({ navigation }) => {
    {listPlay.map(p=>{return(
           
                 <TouchableOpacity onPress={()=>navigation.navigate("Home", {...p})} style={{padding:15 , alignItems:'center'}}>
-                   <Cover
-                    borderRadius={5} 
+                   <CardExam borderRadius={5} 
                     imageUrl={p.poster}
                     height={150}
                     width={150}
-                />
-                    <Text style={{ color: 'white' , fontWeight: 'bold' , fontFamily:'cursive' }}> {p.namePlayList} </Text>
-              <Text style={{ color: 'white' , fontStyle:'italic' , fontFamily:'cursive', fontSize : 12 }}> {p.name} </Text>
+                    text1={p.namePlayList}
+                    text2={p.name}>
                    
+                   </CardExam>                   
                 </TouchableOpacity>
               
 
@@ -72,14 +71,14 @@ const ListePlaylist = ({ navigation }) => {
         {listPlay1.map(p=>{return(
           
           <TouchableOpacity onPress={()=>navigation.navigate("Home", {...p})} style={{padding:15 , alignItems:'center'}}>
-             <Cover
-              borderRadius={5}
-              imageUrl={p.poster}
-              height={150}
-              width={150}
-          />
-              <Text style={{ color: 'white' , fontWeight: 'bold' , fontFamily:'cursive' }}> {p.namePlayList} </Text>
-              <Text style={{ color: 'white' , fontStyle:'italic' , fontFamily:'cursive', fontSize : 12 }}> {p.name} </Text>
+             <CardExam borderRadius={5} 
+                    imageUrl={p.poster}
+                    height={150}
+                    width={150}
+                    text1={p.namePlayList}
+                    text2={p.name}>
+                   
+                   </CardExam> 
              
           </TouchableOpacity>
         
