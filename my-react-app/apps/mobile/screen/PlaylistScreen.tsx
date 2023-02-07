@@ -31,7 +31,7 @@ const PlaylistScreen = ({ navigation }) => {
             
             <View style={{ height: 20 }} />
 
-            <Button title='Play Liste' onPress={()=> {navigation.navigate('ListePlaylist')}}>
+            <Button title='Playlist' onPress={()=> {navigation.navigate('ListePlaylist')}}>
 
             </Button>
 

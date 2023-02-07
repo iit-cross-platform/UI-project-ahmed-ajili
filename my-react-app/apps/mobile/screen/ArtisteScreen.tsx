@@ -41,6 +41,8 @@ const ArtisteScreen = ({ navigation }) => {
   
   }]
 
+ 
+
   
   return (
     <View style={{ flex: 1, backgroundColor: "#1F1D2B", justifyContent: 'center', alignItems: 'center' }}>
@@ -48,9 +50,10 @@ const ArtisteScreen = ({ navigation }) => {
       <Search
   backgroundColor="white"
   borderColor="#000000"
+  
 />
       </View>
-    <View style={{  flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
    {listArtiste.map(p=>{return(
           
                 <TouchableOpacity onPress={()=>navigation.navigate("Home", {...p})} style={{padding:15 , alignItems:'center'}}>
