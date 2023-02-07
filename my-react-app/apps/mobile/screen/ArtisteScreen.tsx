@@ -41,9 +41,11 @@ const ArtisteScreen = ({ navigation }) => {
   return (
     <View style={{ flex: 1, backgroundColor: "#1F1D2B", justifyContent: 'center', alignItems: 'center' }}>
       <View style={{  alignItems: 'center', justifyContent: 'center' }}>
-      <Search>
-        
-      </Search>
+      <Search
+  backgroundColor="white"
+  borderColor="#000000"
+  
+/>
       </View>
     <View style={{  flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
    {listArtiste.map(p=>{return(
