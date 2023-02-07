@@ -55,7 +55,7 @@ const ListePlaylist = ({ navigation }) => {
           
                 <TouchableOpacity onPress={()=>navigation.navigate("Home", {...p})} style={{padding:15 , alignItems:'center'}}>
                    <Cover
-                    borderRadius={200} 
+                    borderRadius={5} 
                     imageUrl={p.poster}
                     height={150}
                     width={150}
@@ -73,7 +73,7 @@ const ListePlaylist = ({ navigation }) => {
           
           <TouchableOpacity onPress={()=>navigation.navigate("Home", {...p})} style={{padding:15 , alignItems:'center'}}>
              <Cover
-              borderRadius={200}
+              borderRadius={5}
               imageUrl={p.poster}
               height={150}
               width={150}

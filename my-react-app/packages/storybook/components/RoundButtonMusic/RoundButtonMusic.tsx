@@ -7,10 +7,11 @@ type RoundButtonMusicProps = {
   icon: React.ReactNode;
   onClickButton: () => void;
   size?: number | 50;
+  padding:number;
 };
 
 const RoundButtonMusic: React.FC<RoundButtonMusicProps> = (props) => {
-  const { backgroundColor, icon, onClickButton, size } = props;
+  const { backgroundColor, icon, onClickButton, size,padding } = props;
 
   const onPressButton = () => {
     onClickButton();
@@ -24,6 +25,7 @@ const RoundButtonMusic: React.FC<RoundButtonMusicProps> = (props) => {
             backgroundColor,
             height: size,
             width: size,
+            margin:padding,
           },
         ]}
         onPress={onPressButton}

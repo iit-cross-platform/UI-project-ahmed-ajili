@@ -13,7 +13,8 @@ const RoundButtonMusicMeta: ComponentMeta<typeof RoundButtonMusic> = {
 
         backgroundColor : "blue",
         icon :  <AntDesign name="play" size={24} color="red" />,
-        onClickButton : ()=> {console.log("Onclick")}
+        onClickButton : ()=> {console.log("Onclick")},
+        padding : 10
         
 
     }

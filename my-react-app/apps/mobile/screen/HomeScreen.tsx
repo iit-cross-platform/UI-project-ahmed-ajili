@@ -129,62 +129,43 @@ const HomeScreen = ({ navigation, route }) => {
                 />
             </View>
             <View style={{ flex: 1, flexDirection: "row", alignItems: 'center', justifyContent: 'center' }}>
-                <RoundButtonMusic
-                    backgroundColor="transparent"
-                    icon={<AntDesign name="banckward" size={24} color="white" />}
-                    onClickButton={() => { setCurrentDuration(oldValue => oldValue - 10) 
-                        video.current.playFromPositionAsync(currentDuration*1000)
-                    }}
-                    size={50}
-                />
+             
 
                 <RoundButtonMusic
-                    backgroundColor="transparent"
+                    backgroundColor="#393737"
                     icon={<AntDesign name="stepbackward" size={24} color="white" />}
                     onClickButton={() => { setCurrentDuration(oldValue => oldValue - 2) 
                         video.current.playFromPositionAsync(currentDuration*1000)
                     }}
-                    size={50}
+                    size={40}
+                    padding={10}
                 /> <RoundButtonMusic
-                    backgroundColor="transparent"
+                    backgroundColor="#393737"
                     icon={isPlaying ? <FontAwesome name="pause" size={24} color="white" /> : <FontAwesome name="play" size={24} color="white" />}
                     onClickButton={() => { handlePlay(!isPlaying) }}
                     size={50}
+                    padding={10}
                 /> <RoundButtonMusic
-                    backgroundColor="transparent"
+                    backgroundColor="#393737"
                     icon={<AntDesign name="stepforward" size={24} color="white" />}
                     onClickButton={() => { setCurrentDuration(oldValue => oldValue + 2) 
                         video.current.playFromPositionAsync(currentDuration*1000)
                     }}
 
-                    size={50}
-                /> <RoundButtonMusic
-                    backgroundColor="transparent"
-                    icon={<AntDesign name="forward" size={24} color="white" />}
-                    onClickButton={() => 
-                    { 
-                        setCurrentDuration(oldValue => oldValue + 10)
-                        video.current.playFromPositionAsync(currentDuration*1000)
-                    }}
-
-                    size={50}
-                />
+                    size={40}
+                    padding={10}
+                /> 
 
             </View>
             <View style={{ flex: 2 }}></View>
             <View style={{ flex: 1 , alignItems:'center'}}>
-            <RoundButtonMusic
-                    backgroundColor="transparent"
-                    icon={<AntDesign name="up" size={24} color="white"  />}
-
-                    size={25}
-                />
+          
                 <UpNextButton
-                    backgroundColor="transparent"
+                    backgroundColor="white"
                     borderRadius="10"
                     text="Up Next"
                     textColor="white"
-                    type="button"
+                    type="link"
                 />
                 </View>
         </View>

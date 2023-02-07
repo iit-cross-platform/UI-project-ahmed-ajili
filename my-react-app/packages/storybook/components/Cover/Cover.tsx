@@ -14,7 +14,8 @@ const Cover: React.FC<CoverProp> = (props) => {
     <View>
       <ImageBackground
         source={{ uri: imageUrl }}
-        style={{ height, width, borderRadius }}
+        imageStyle={{borderRadius}}
+        style={{ height, width}}
       ></ImageBackground>
     </View>
   );
